@@ -25,17 +25,13 @@
   <body ng-controller="GitUserSearchController as searchCtrl">
     <div>
       <form class="form-horizontal">
-        <input type="text" >
-        <button class="btn">Search</button>
+        <input type="text" ng-model="searchCtrl.searchTerm">
+        <button class="btn" ng-click="searchCtrl.doSearch()">Search</button>
       </form>
       <ul class="list-group">
-        <li class="list-group-item">
-          <img src="https://avatars.githubusercontent.com/u/469160?v=3&s=50">
-          <a href="https://github.com/antonydenyer">antonydenyer</a>
-        </li>
-        <li class="list-group-item">
-          <img src="https://avatars.githubusercontent.com/u/30216?v=3&s=50">
-          <a href="https://github.com/tansaku">tansaku</a>
+        <li ng-repeat="user in searchCtrl.searchResult.items">
+          <img ng-src="{{user.avatar_url}}&s=50">
+          <a ng-href="{{user.html_url}}">{{user.login}}</a>
         </li>
       </ul>
     </div>
