@@ -1,7 +1,7 @@
 {
   "name": "angularjs_intro",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the code for [Angular JS Introductory Walkthrough](https://github.com/makersacademy/course/edit/master/further_javascript/angularjs.md)",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start test/karma.conf.js"
@@ -9,10 +9,22 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jasmine-core": "^2.2.0",
-    "karma": "^0.12.31",
-    "karma-chrome-launcher": "^0.1.8",
-    "karma-jasmine": "^0.3.5",
-    "karma-phantomjs-launcher": "^0.1.4"
-  }
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benja2208/angularjs-intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benja2208/angularjs-intro/issues"
+  },
+  "homepage": "https://github.com/benja2208/angularjs-intro#readme"
 }

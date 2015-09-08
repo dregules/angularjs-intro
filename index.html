@@ -9,18 +9,33 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="js/app.js"></script>
     <script src="js/gitUserSearchController.js"></script>
+
+    <style>
+      .list-group-item {
+        border-color: blue;
+        border-padding: 40%;
+        padding-left: 40%;
+      }
+      .form-horizontal{
+        padding-left: 40%;
+      }
+    </style>
   </head>
 
-  <body ng-controller="GitUserSearchController as searchCtrl">
+  <body>
     <div>
       <form class="form-horizontal">
-        <input type="text" ng-model="searchCtrl.searchTerm" ng-change="searchCtrl.doSearch()" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }">
-        <button class="btn" ng-click="searchCtrl.doSearch()">Search</button>
+        <input type="text" >
+        <button class="btn">Search</button>
       </form>
-      <ul class="list-group" ng-repeat="user in searchCtrl.searchResult.items">
-        <li>
-          <img ng-src="{{user.avatar_url}}&s=50">
-          <a ng-href="{{user.html_url}}">{{user.login}}</a>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <img src="https://avatars.githubusercontent.com/u/469160?v=3&s=50">
+          <a href="https://github.com/antonydenyer">antonydenyer</a>
+        </li>
+        <li class="list-group-item">
+          <img src="https://avatars.githubusercontent.com/u/30216?v=3&s=50">
+          <a href="https://github.com/tansaku">tansaku</a>
         </li>
       </ul>
     </div>
