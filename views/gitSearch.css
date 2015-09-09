@@ -1,0 +1,33 @@
+li {
+  list-style-type: none;
+  margin-left: 10px;
+  /*vertical-align: middle;*/
+  padding: 0 40% 0 40%;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+a {
+  font-size: 30px;
+}
+
+.form-horizontal {
+  margin: 10px;
+  padding: 0 40% 0 40% ;
+}
+
+
+
+
+/**/ https://css-tricks.com/snippets/css/style-placeholder-text/
+::-webkit-input-placeholder {
+  color: #8b87a5 ;
+  font-size: 85%;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #8b87a5 ;
+  font-size: 85%;
+}
