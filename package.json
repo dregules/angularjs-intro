@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/benja2208/angularjs-intro/issues"
   },
-  "homepage": "https://github.com/benja2208/angularjs-intro#readme"
+  "homepage": "https://github.com/benja2208/angularjs-intro#readme",
+  "dependencies": {
+    "http-server": "^0.8.0"
+  }
 }
