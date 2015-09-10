@@ -1,31 +1,40 @@
+* {
+  outline: 1px solid #f0f0f0;
+}
+
+h1 {
+  margin: ;
+}
+
 li {
   list-style-type: none;
-  margin-left: 10px;
-  /*vertical-align: middle;*/
-  padding: 0 40% 0 40%;
+  margin: 10px;
+  /*padding: 0 40px 0 40px;*/
+}
+form {
+  padding: 10px 25px 50px 25px;
+}
+input {
+  width: 50px;
 }
 
 img {
-  height: 50px;
-  width: 50px;
+  height: 5%;
+  width: 5%;
 }
+
+a, p{
+  /*margin: 5px;*/
+  /*padding: 20px;*/
+}
+
 a {
-  font-size: 30px;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 25px;
 }
 
-.form-horizontal {
-  margin: 10px;
-  padding: 0 40% 0 40% ;
+p {
+  font-size: 20px;
 }
 
-
-/**/ https://css-tricks.com/snippets/css/style-placeholder-text/
-::-webkit-input-placeholder {
-  color: #8b87a5 ;
-  font-size: 85%;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-  color: #8b87a5 ;
-  font-size: 85%;
-}
