@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Github user search</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -14,22 +14,33 @@
   </head>
 
   <body ng-controller="GitUserSearchController as searchCtrl">
-    <div class="container-fluid">
-      <h1 class='row'>D-Git</h1>
+    <div class="container">
+      <h1 class='row header'>
+        <font class="character-D">D</font>
+        <font class="character-dash">-</font>
+        <font class='characters-Git'>Git </font>
+        <font class='characters-Search'>Search</font>
+      </h1>
         <form>
-          <!--   <span class="input-group-addon"></span> -->
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" ng-model="searchCtrl.searchTerm" ng-change="searchCtrl.doSearch()"
-            ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }">
-          <!-- <div class="col-xs-2"> -->
-            <button class="btn btn-primary" aria-describedby="sizing-addon1" ng-click="searchCtrl.doSearch()">Search</button>
-          <!-- </div> -->
+          <div class="row">
+            <div class="input-group input-group">
+              <span class="input-group-addon" id="sizing-addon2" >Git</span>
+              <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" ng-model="searchCtrl.searchTerm" ng-change="searchCtrl.doSearch()"
+              ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }">
+            </div>
+          </div>
+          <div class='row search-button'>
+            <button class="btn btn-primary" ng-click="searchCtrl.doSearch()">Look Up</button>
+          </div>
         </form>
-        <ul class="list-group">
-          <li class="row" ng-repeat="user in searchCtrl.searchResult.items">
-            <img class="col-md-3" ng-src="{{user.avatar_url}}">
-            <a class="col-md-3" ng-href="{{user.html_url}}">{{user.login}}</a>
-            <p class="col-md-3"> Container for Repos #</p>
-            <p class="col-md-3"> Container for Follower #</p>
+        <ul >
+          <li ng-repeat="user in searchCtrl.searchResult.items">
+            <div class='row'>
+              <img class="col-md-3" ng-src="{{user.avatar_url}}">
+              <a  ng-href="{{user.html_url}}">{{user.login}}</a>
+              <p > Container for Repos #</p>
+              <p > Container for Follower #</p>
+            </div>
           </li>
         </ul>
     </div>

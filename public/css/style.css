@@ -1,9 +1,22 @@
-* {
+/** {
   outline: 1px solid #f0f0f0;
+}*/
+
+h1 .header {
+  font-family: 'Oswald', sans-serif ;
+}
+.character-D {
+  color:#6D13B0;
+}
+.character-dash {
+  color: #625D5D;
+}
+.characters-Git {
+  color: #AE1618;
 }
 
-h1 {
-  margin: ;
+.characters-Search {
+  color: #3974E1;
 }
 
 li {
@@ -11,11 +24,20 @@ li {
   margin: 10px;
   /*padding: 0 40px 0 40px;*/
 }
+
+
 form {
   padding: 10px 25px 50px 25px;
+  margin: 0 auto;
+  width: 300px;
 }
-input {
+
+/*input {
   width: 50px;
+}*/
+.btn-primary {
+  margin-left: 37.5% ;
+  margin-top: 10px;
 }
 
 img {
