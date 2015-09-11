@@ -37,7 +37,7 @@
         <ul ng-repeat='user in searchCtrl.searchResult'>
           <li>
             <div class='row'>
-              <img class="col-md-3" ng-src="{{user.avatar_url}}">
+              <img class="col-md-2" ng-src="{{user.avatar_url}}">
               <a  ng-href="{{user.html_url}}">{{user.login}}</a>
               <p> Repositories: {{user.public_repos}}</p>
               <p> Followers: {{user.followers}}</p>
