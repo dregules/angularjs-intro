@@ -1,10 +1,11 @@
-githubUserSearch.controller('GitUserSearchController', ['Search', function(Search) {
+githubUserSearch.controller('GitUserSearchController', ['UserInfo', function(UserInfo) {
   var self = this;
 
   self.doSearch = function() {
-    Search.query(self.searchTerm)
-      .then(function(response) {
-        self.searchResult = response.data;
+    console.log("Self.searchTerm is:", self.searchTerm);
+    UserInfo.query(self.searchTerm).then(function(response) {
+        self.searchResult = response;
+        console.log("Self.searchResult is: ", self.searchResult)
       })
 
   };

@@ -2,8 +2,9 @@
   outline: 1px solid #f0f0f0;
 }*/
 
-h1 .header {
-  font-family: 'Oswald', sans-serif ;
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 58px;
 }
 .character-D {
   color:#6D13B0;
@@ -41,8 +42,8 @@ form {
 }
 
 img {
-  height: 5%;
-  width: 5%;
+  height: 2%;
+  width: 2%;
 }
 
 a, p{

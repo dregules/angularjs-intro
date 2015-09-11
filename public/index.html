@@ -11,12 +11,13 @@
     <script src="js/app.js"></script>
     <script src="js/gitUserSearchController.js"></script>
     <script src="js/searchFactory.js"></script>
+    <script src="js/userInfoFactory.js"></script>
   </head>
 
   <body ng-controller="GitUserSearchController as searchCtrl">
     <div class="container">
       <h1 class='row header'>
-        <font class="character-D">D</font>
+        <font class="character-D col-md-offset-4">D</font>
         <font class="character-dash">-</font>
         <font class='characters-Git'>Git </font>
         <font class='characters-Search'>Search</font>
@@ -33,13 +34,13 @@
             <button class="btn btn-primary" ng-click="searchCtrl.doSearch()">Look Up</button>
           </div>
         </form>
-        <ul >
-          <li ng-repeat="user in searchCtrl.searchResult.items">
+        <ul ng-repeat='user in searchCtrl.searchResult'>
+          <li>
             <div class='row'>
               <img class="col-md-3" ng-src="{{user.avatar_url}}">
               <a  ng-href="{{user.html_url}}">{{user.login}}</a>
-              <p > Container for Repos #</p>
-              <p > Container for Follower #</p>
+              <p> Repositories: {{user.public_repos}}</p>
+              <p> Followers: {{user.followers}}</p>
             </div>
           </li>
         </ul>

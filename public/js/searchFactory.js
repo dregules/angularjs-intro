@@ -8,7 +8,14 @@ githubUserSearch.factory('Search', ['$http', function($http) {
         params: {
           'q': searchTerm
         }
-      }); 
+      });
+    },
+    getUserInfo: function(user_url){
+      return $http({
+        url: user_url,
+        method: 'GET'
+      })
     }
   }
+
 }]);
