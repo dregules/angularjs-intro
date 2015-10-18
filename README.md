@@ -15,15 +15,22 @@ NPM [Instructions here](http://blog.teamtreehouse.com/install-node-js-npm-mac)
 
 ###Versions used:
 `npm -v` -  *2.14.2*
+
 `bower -v` - *1.5.2*
+
 `ruby -v` - *2.2.1p85*
 
 ##Getting Started
 `git clone https://github.com/dregules/git-search`
+
 `cd git-search`
+
 `npm install`
+
 `bower install`
+
 `bundle install`
+
 `ruby app.rb`
 
 go to localhost:3000
