@@ -16,7 +16,7 @@ describe('GitUserSearchController', function() {
     var httpBackend;
 
     beforeEach(inject(function($httpBackend) {
-      httpBackend = $httpBackend
+      httpBackend = $httpBackend;
       httpBackend
         .expectGET("https://api.github.com/search/users?q=hello")
         .respond(
@@ -50,4 +50,3 @@ describe('GitUserSearchController', function() {
     });
   });
 });
-

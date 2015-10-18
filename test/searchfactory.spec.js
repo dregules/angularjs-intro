@@ -24,7 +24,7 @@ describe('factory: Search', function() {
   var httpBackend;
 
   beforeEach(inject(function($httpBackend) {
-    httpBackend = $httpBackend
+    httpBackend = $httpBackend;
     httpBackend
       .when("GET", "https://api.github.com/search/users?q=hello")
       .respond(
@@ -40,9 +40,9 @@ describe('factory: Search', function() {
   it('returns search results', function() {
 	  search.query('hello')
 	    .then(function(response) {
-	      expect(response.data.items).toEqual(items)
+	      expect(response.data.items).toEqual(items);
 	    })
-	  httpBackend.flush();  
+	  httpBackend.flush();
 	})
 
 });

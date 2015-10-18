@@ -1,7 +1,7 @@
 {
   "name": "angularjs_intro",
   "version": "1.0.0",
-  "description": "This is the code for [Angular JS Introductory Walkthrough](https://github.com/makersacademy/course/edit/master/further_javascript/angularjs.md)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start test/karma.conf.js"
