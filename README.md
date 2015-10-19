@@ -29,6 +29,9 @@ NPM [Instructions here](http://blog.teamtreehouse.com/install-node-js-npm-mac)
 go to localhost:3000
 
 ##Running tests
+For Karma, simply run `npm test`
+
+For Protractor e2e
 
 `webdriver-manager start`
 
@@ -38,6 +41,4 @@ Open new terminal tab and run
 
 Open new terminal tab and run
 
-`protractor test/e2e/conf.js` or
-
-`karma start test/karma.conf.js`
+`protractor test/e2e/conf.js`
